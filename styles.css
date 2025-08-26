@@ -196,6 +196,10 @@ img, iframe{
   vertical-align: middle;
 }
 
+.lista-contacto li{
+  padding: 5px;
+}
+
 /* libreria */
 
 /* From Uiverse.io by JaydipPrajapati1910 */ 
@@ -410,6 +414,10 @@ img, iframe{
 }
 
 @media screen and (max-width: 600px) {
+
+  .content{
+      scroll-margin-top: 160px;
+  }
 
   .header{
     padding: 10px;
