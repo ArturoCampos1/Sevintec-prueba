@@ -12,197 +12,165 @@
 
     <!--Header-->
     <div class="header">
-        <img src="images/logo.png" class="banner" alt="logo-sevintec">
-                <!-- From Uiverse.io by JaydipPrajapati1910 --> 
-                <label for="burger" class="burger">
-                <input id="burger" type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-                </label>
-                
+        <img src="/images/logo.png" class="banner" alt="logo-sevintec">
+        <label for="burger" class="burger">
+            <input id="burger" type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
         <ul id="menu" class="lista-navbar">
             <li><a href="#sobre-nosotros"><b>Sobre Nosotros</b></a></li>
             <li><a href="#servicios"><b>Servicios</b></a></li>
             <li><a href="#localizacion"><b>Localización</b></a></li>
             <li><a href="#contacto"><b>Contacto</b></a></li>
             <li>
-                <!-- From Uiverse.io by Galahhad --> 
                 <div>
                     <label id="darkModeToggle" class="ui-switch">
-                    <input type="checkbox">
-                    <div class="slider">
-                        <div class="circle"></div>
-                    </div>
+                        <input type="checkbox">
+                        <div class="slider">
+                            <div class="circle"></div>
+                        </div>
                     </label>
                 </div>
             </li>
         </ul>
 
-            <script>
-                const burger = document.getElementById('burger');
-                const menu = document.getElementById('menu');
-                const darkModeToggle = document.getElementById('darkModeToggle');
+        <script>
+            const burger = document.getElementById('burger');
+            const menu = document.getElementById('menu');
+            const darkModeToggle = document.getElementById('darkModeToggle');
 
-                burger.addEventListener('click', () => {
-                menu.classList.toggle('clicked');  // activa o desactiva la clase que muestra el menú
-                });
+            burger.addEventListener('click', () => {
+                menu.classList.toggle('clicked');
+            });
 
-                darkModeToggle.addEventListener('change', () => {
+            darkModeToggle.addEventListener('change', () => {
                 document.body.classList.toggle('dark-mode');
-                });
-
-            </script>
-
+            });
+        </script>
     </div>
     <!--Fin header-->
 
-
     <!--Hero-->
-    <section class="hero">
+    <section class="hero" data-aos="fade-down" data-aos-duration="1000">
         <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1>Soluciones Técnicas para Talleres</h1>
-                <p>Más de 20 años brindando asesoría y servicio especializado en chapa y pintura automotriz.</p>
-                <div class="data">
-                    <span id="contador" class="contador-anim"></span>
-                    <span id="contador-clientes" class="contador-anim"></span>
-                    <span id="contador-proyectos" class="contador-anim"></span>
-                </div>
-                    <br><br>
-                <a href="#servicios" class="btn-hero">Conoce nuestros servicios</a>
+        <div class="hero-content">
+            <h1 data-aos="fade-down" data-aos-delay="200">Soluciones Técnicas para Talleres</h1>
+            <p data-aos="fade-up" data-aos-delay="400">Más de 20 años brindando asesoría y servicio especializado en chapa y pintura automotriz.</p>
+            <div class="data">
+                <span id="contador" class="contador-anim" data-aos="fade-right" data-aos-delay="600"></span>
+                <span id="contador-clientes" class="contador-anim" data-aos="fade-right" data-aos-delay="800"></span>
+                <span id="contador-proyectos" class="contador-anim" data-aos="fade-right" data-aos-delay="1000"></span>
             </div>
+            <br><br>
+            <a href="#servicios" class="btn-hero" data-aos="zoom-in" data-aos-delay="1200">Conoce nuestros servicios</a>
+        </div>
     </section>
     <!--Fin hero-->
 
-    <!--Contenido-->
-
     <!--Sobre nosotros-->
-    <div id="sobre-nosotros" class="content">
+    <div id="sobre-nosotros" class="content" data-aos="fade-up" data-aos-duration="1000">
         <h2>Sobre Nosotros</h2>
-
-            <div class="contenido-sobre-nosotros">
-                <p>
-                    En <b>SEVINTEC</b> llevamos más de dos décadas ofreciendo soluciones de <b>asesoramiento y servicio técnico</b> 
-                    para talleres de chapa y pintura del automóvil. Nuestro equipo está formado por profesionales especializados 
-                    que entienden las necesidades reales de los talleres modernos.
-                    <br><br>
-                    Trabajamos junto a marcas reconocidas del sector automotriz, lo que nos permite brindar 
-                    <b>soluciones integrales, innovadoras y efectivas</b>. Nuestro compromiso es claro: 
-                    aumentar la productividad de tu taller, mejorar la calidad de los procesos y garantizar 
-                    la satisfacción de tus clientes.
-                    <br><br>
-                    Creemos que la evolución constante es la clave del éxito. Por eso, acompañamos a cada taller no solo con equipos y soluciones técnicas, sino también con <b>asesoría personalizada y capacitación práctica</b>. Nuestra misión es impulsar la eficiencia de tu negocio, ayudarte a incorporar nuevas  tecnologías y garantizar que cada proyecto se realice con la más alta calidad.
-                </p>
-                
-                <img src="images/img3.png" width="300px" alt="Cabina de pintura">
-            </div>
+        <div class="contenido-sobre-nosotros">
+            <p data-aos="fade-right" data-aos-delay="200">
+                En <b>SEVINTEC</b> llevamos más de dos décadas ofreciendo soluciones de <b>asesoramiento y servicio técnico</b> 
+                para talleres de chapa y pintura del automóvil. Nuestro equipo está formado por profesionales especializados 
+                que entienden las necesidades reales de los talleres modernos.
+                <br><br>
+                Trabajamos junto a marcas reconocidas del sector automotriz, lo que nos permite brindar 
+                <b>soluciones integrales, innovadoras y efectivas</b>. Nuestro compromiso es claro: 
+                aumentar la productividad de tu taller, mejorar la calidad de los procesos y garantizar 
+                la satisfacción de tus clientes.
+                <br><br>
+                Creemos que la evolución constante es la clave del éxito. Por eso, acompañamos a cada taller no solo con equipos y soluciones técnicas, sino también con <b>asesoría personalizada y capacitación práctica</b>. Nuestra misión es impulsar la eficiencia de tu negocio, ayudarte a incorporar nuevas  tecnologías y garantizar que cada proyecto se realice con la más alta calidad.
+            </p>
+            <img src="images/img3.png" width="300px" alt="Cabina de pintura" data-aos="zoom-in" data-aos-delay="400">
         </div>
-
-        <script>
-            function animarContador(final, duracion) {
-                const contador = document.getElementById('contador');
-                let inicio = 0;
-                const pasoTiempo = 40; // ms, intervalo de actualización
-                const pasos = duracion / pasoTiempo; // número total de pasos
-                const incremento = final / pasos;
-                let valorActual = inicio;
-                let contadorInterval = setInterval(() => {
-                valorActual += incremento;
-                if (valorActual >= final) {
-                    valorActual = final;
-                    clearInterval(contadorInterval);
-                }
-                    contador.innerHTML = `<span class="numero-destacado">+${Math.floor(valorActual)}</span> años de experiencia`;
-                }, pasoTiempo);
-            }
-
-            animarContador(20, 1500); // cuenta hasta 20 en 2000ms (2 segundos)
-
-            function animarContadorClientes(final, duracion) {
-            const contador = document.getElementById('contador-clientes');
-            let inicio = 0;
-            const pasoTiempo = 20;
-            const pasos = duracion / pasoTiempo;
-            const incremento = final / pasos;
-            let valorActual = inicio;
-            let contadorInterval = setInterval(() => {
-                valorActual += incremento;
-                if (valorActual >= final) {
-                    valorActual = final;
-                    clearInterval(contadorInterval);
-                }
-                    contador.innerHTML = `<span class="numero-destacado">+${Math.floor(valorActual)}</span> clientes satisfechos`;
-            }, pasoTiempo);
-            }
-
-            animarContadorClientes(150, 2000);
-
-            function animarContadorProyectos(final, duracion) {
-            const contador = document.getElementById('contador-proyectos');
-            let inicio = 0;
-            const pasoTiempo = 20;
-            const pasos = duracion / pasoTiempo;
-            const incremento = final / pasos;
-            let valorActual = inicio;
-            let contadorInterval = setInterval(() => {
-                valorActual += incremento;
-                if (valorActual >= final) {
-                    valorActual = final;
-                    clearInterval(contadorInterval);
-                }
-                    contador.innerHTML = `<span class="numero-destacado">+${Math.floor(valorActual)}</span> proyectos completados`;
-            }, pasoTiempo);
-            }
-
-            animarContadorProyectos(85, 1800);
-
-        </script>
     </div>
-    <!--  -->
+
+    <script>
+        function animarContador(final, duracion, id, texto) {
+            const contador = document.getElementById(id);
+            let inicio = 0;
+            const pasoTiempo = 40;
+            const pasos = duracion / pasoTiempo;
+            const incremento = final / pasos;
+            let valorActual = inicio;
+            let contadorInterval = setInterval(() => {
+                valorActual += incremento;
+                if (valorActual >= final) {
+                    valorActual = final;
+                    clearInterval(contadorInterval);
+                }
+                contador.innerHTML = `<span class="numero-destacado">+${Math.floor(valorActual)}</span> ${texto}`;
+            }, pasoTiempo);
+        }
+
+        animarContador(20, 1500, 'contador', 'años de experiencia');
+        animarContador(150, 2000, 'contador-clientes', 'clientes satisfechos');
+        animarContador(85, 1800, 'contador-proyectos', 'proyectos completados');
+    </script>
 
     <!--Servicios-->
-    <div id="servicios" class="content">
+    <div id="servicios" class="content" data-aos="fade-up" data-aos-duration="1000">
         <h2>Servicios</h2>
-
         <br>
-
-            <ul class="menu-servicios">
-                <li class="card-servicios"><img class="card-foto" src="images/img1-copia.jpeg" alt=""><br><b>Asesoramiento Técnico:</b> diagnóstico especializado y apoyo en procesos de chapa y pintura.</li>
-                <li class="card-servicios"><img class="card-foto" src="images/img2.png" alt=""><br><b>Instalación y Mantenimiento de Cabinas:</b> cabinas de pintura, herramientas y maquinaria.</li>
-                <li class="card-servicios"><img class="card-foto" src="images/img3.png" alt=""><br><b>Suministro de Materiales:</b> pinturas, consumibles y productos de máxima calidad.</li>
-                <li class="card-servicios"><img class="card-foto" src="images/img4.jpeg" alt=""><br><b>Soluciones Personalizadas:</b> adaptamos nuestros servicios según las necesidades de cada cliente.</li>
-            </ul>
-            <br>
-    <p>
-        Nos enorgullece ser un <b>socio estratégico</b> para los talleres que buscan crecer, 
-        modernizarse y ofrecer un servicio impecable.
-    </p>
-        
+        <ul class="menu-servicios">
+            <li class="card-servicios" data-aos="flip-left" data-aos-delay="100">
+                <img class="card-foto" src="images/img1-copia.jpeg" alt=""><br>
+                <b>Asesoramiento Técnico:</b> diagnóstico especializado y apoyo en procesos de chapa y pintura.
+            </li>
+            <li class="card-servicios" data-aos="flip-left" data-aos-delay="200">
+                <img class="card-foto" src="images/img2.png" alt=""><br>
+                <b>Instalación y Mantenimiento de Cabinas:</b> cabinas de pintura, herramientas y maquinaria.
+            </li>
+            <li class="card-servicios" data-aos="flip-left" data-aos-delay="300">
+                <img class="card-foto" src="images/img3.png" alt=""><br>
+                <b>Suministro de Materiales:</b> pinturas, consumibles y productos de máxima calidad.
+            </li>
+            <li class="card-servicios" data-aos="flip-left" data-aos-delay="400">
+                <img class="card-foto" src="images/img4.jpeg" alt=""><br>
+                <b>Soluciones Personalizadas:</b> adaptamos nuestros servicios según las necesidades de cada cliente.
+            </li>
+        </ul>
+        <br>
+        <p data-aos="fade-right" data-aos-delay="500">
+            Nos enorgullece ser un <b>socio estratégico</b> para los talleres que buscan crecer, 
+            modernizarse y ofrecer un servicio impecable.
+        </p>
     </div>
-    <!--  -->
 
     <!--Localizacion-->
-    <div id="localizacion" class="content">
+    <div id="localizacion" class="content" data-aos="fade-up" data-aos-duration="1000">
         <h2>Localización</h2>
-
-        <div class="mapa">
+        <div class="mapa" data-aos="zoom-in" data-aos-delay="200">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6340.459745779686!2d-5.927799224096857!3d37.38439567208636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f3dfdbc24a3%3A0xe06d7e533a644128!2sC%2F%20Pino%20Alepo%2C%2017%2C%2041016%20Sevilla!5e0!3m2!1ses!2ses!4v1756202510142!5m2!1ses!2ses" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    <!--  -->
 
     <!--Contacto-->
-    <div id="contacto" class="content">
+    <div id="contacto" class="content" data-aos="fade-up" data-aos-duration="1000">
         <h2>Contacto</h2>
-
+        <p data-aos="fade-right" data-aos-delay="200">Si quieres ponerte en contacto con nosotros, puedes hacerlo a través de los siguientes medios:</p>
+        <ul data-aos="fade-left" data-aos-delay="400">
+            <li><strong>Teléfono:</strong> +34 615 10 88 60 - Joaquín </li>
+            <li><strong>Teléfono:</strong> +34 607 50 27 29 - David </li>
+            <li><strong>Correo electrónico:</strong> sevintecsl@hotmail.es</li>
+            <li><strong>Redes sociales:</strong>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/tuusuario" target="_blank">LinkedIn</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
-    <!--  -->
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-    AOS.init();
+        AOS.init({
+            once: true // Animaciones solo la primera vez que aparecen en pantalla
+        });
     </script>
 </body>
-
 </html>

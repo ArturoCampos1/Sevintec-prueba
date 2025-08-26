@@ -343,6 +343,10 @@ img, iframe{
 
 @media screen and (max-width: 1200px) {
 
+  .content{
+      scroll-margin-top: 160px;
+  }
+  
   .data{
     display: flex;
     flex-direction: column;
