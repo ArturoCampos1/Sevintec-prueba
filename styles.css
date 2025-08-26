@@ -416,7 +416,7 @@ img, iframe{
 @media screen and (max-width: 600px) {
 
   .content{
-      scroll-margin-top: 160px;
+      scroll-margin-top: 100px;
   }
 
   .header{
@@ -437,4 +437,5 @@ img, iframe{
     width: 160px;
     height: 160px;
   }
+
 }
