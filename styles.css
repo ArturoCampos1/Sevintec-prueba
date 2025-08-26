@@ -44,6 +44,7 @@ img, iframe{
 
 .banner{
   display: flex;
+  width: 200px;
   margin: 0 auto;
 }
 
@@ -397,6 +398,12 @@ img, iframe{
 }
 
 @media screen and (max-width: 600px) {
+
+  .header{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 
   .contenido-sobre-nosotros img{
     width: 200px;
