@@ -22,6 +22,10 @@ a{
   color: inherit;
 }
 
+li{
+  list-style: none;
+}
+
 a:visited {
   color: inherit;
 }
@@ -50,7 +54,6 @@ img, iframe{
 
 .lista-navbar{
   display: flex;
-  list-style: none;
   flex-direction: row;
   gap: 50px;
   justify-content: center;
@@ -156,7 +159,6 @@ img, iframe{
 /* Servicios */
 .card-servicios{
   text-align: center;
-  list-style: none;
   border: 1px solid black;
   border-radius: 15px;
   padding: 30px;
@@ -183,9 +185,15 @@ img, iframe{
 
 .mapa iframe{
   width: 100%;
-  max-width: 800px; /* ancho máximo en pantallas grandes */
+  max-width: 700px; /* ancho máximo en pantallas grandes */
   height: 450px;    /* alto en pantallas grandes */
   border: 0;
+}
+
+/* Contacto */
+
+#contacto img{
+  vertical-align: middle;
 }
 
 /* libreria */
@@ -417,16 +425,8 @@ img, iframe{
     width: 180px;
   }
 
-  .menu-servicios{
-
-  }
-
   .card-foto{
     width: 160px;
     height: 160px;
-  }
-
-  .mapa{
-    width: 300px;
   }
 }
